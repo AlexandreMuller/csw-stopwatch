@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carregar o estilo da pagina -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link do css do w3school -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Link dos icones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cronômetro</title>
+
+    <!-- Carregar o script -->
+    <script src="scripts/script.js"></script>
+
+</head>
+<body>
+
+    <!-- Cronometro -->
+    <div id="tempo">
+        <span id="horas"></span><span id="minutos"></span><span id="segundos">0.00 s</span>
+    </div>
+    
+    <!-- Controle do cronometro -->
+    <div id="control">
+        <!-- Botao de Iniciar -->
+        <button class="w3-btn w3-green" id="play" onclick="iniciarCronometro();">
+            <i class="material-icons" style="font-size:20px;">play_arrow</i>
+            <span id="play-text">Iniciar</span>
+        </button>
+
+        <!-- Botao de Pausar -->
+        <button class="w3-btn w3-grey" id="pause" onclick="pausarCronometro();" disabled="true">
+            <i class="material-icons" style="font-size:20px;">pause</i>
+            <span>Pausar</span>
+        </button>
+
+        <!-- Botao de Zerar -->
+        <button class="w3-btn w3-red" id="reset" onclick="zerarCronometro();" disabled="true">
+            <i class="material-icons" style="font-size: 20px;">clear</i>
+            <span>Zerar</span>
+        </button>
+
+        <!-- Botao de Marcar -->
+        <button class="w3-btn w3-blue" id="mark-button" onclick="marcarCronometro();" disabled="true">
+            <span>Marcar</span>
+        </button>
+    </div>
+
+    <!--marcação dos tempos de acordo com o cronometro-->
+    <div class="marking">
+        <h5>Marcação de tempo</h5>
+        <div class="marking-box">
+            <div id="mark">
+                <!-- Aqui ficara as marcacoes do tempo-->
+            </div>
+        </div>
+
+        <!--botao de limpar, que ira abrir uma caixa de alerta de confirmacao ou negacao-->
+        <button class="w3-btn w3-red w3-right" id="clean" onclick="document.getElementById('alerta').style.display = 'block'" disabled="true">
+            <i class="material-icons" style="font-size: 24px;">delete</i>
+            <span>Limpar</span>
+        </button>
+
+        <div id="alerta" class="w3-modal">
+            <div class="modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <h2>Tem certeza?</h2>
+                </header>
+
+                <p style="text-align: center;">Isso apagará todas as suas marcações de tempo!</p>
+           
+                <!-- Botoes de sim/nao, sendo sim puxar a funcao -->
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-button w3-center w3-white w3-border"
+                    onclick="limparMarcacao();">Sim</button>
+
+                    <button class="w3-button w3-center w3-white w3-border"
+                    onclick='document.getElementById("alerta").style.display="none"'>Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
