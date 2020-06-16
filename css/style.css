@@ -10,13 +10,13 @@ html{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    user-select: none;
+    user-select: none
 }
 
 #control span{
     position: relative;
     vertical-align: middle;
-    right: 2px;
+    right: 2px
 }
 
 /* Cronometro */
@@ -28,7 +28,7 @@ html{
     font-size: 2.5em;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    user-select: none;
+    user-select: none
 }
 
 /* Janela das marcacoes */
@@ -36,7 +36,7 @@ html{
     box-shadow: 1px 2px 5px 5px #888;
     width: 800px;
     height: 400px;
-    margin: 2% auto 0;
+    margin: 2% auto 0
 }
 
 /* Titulo da janela */
@@ -49,14 +49,14 @@ html{
     background-color: #2196f3;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    user-select: none;
+    user-select: none
 }
 
 /* Botao de limpar */
 .marking button{
     align-items: flex;
     margin: 15px 17px;
-    padding: 4px 10px 4px;
+    padding: 4px 10px 4px
 }
 
 .marking button span{
@@ -64,14 +64,14 @@ html{
     position: relative;
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .marking-box{
     width: 100%;
     max-width: 800px;
     height: 75%;
-    overflow-y: scroll;
+    overflow-y: scroll
 }
 
 /* Caixas das marcacoes */
@@ -84,7 +84,11 @@ html{
     background-color: #e4e4e4;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 700
+}
+
+#marking-style:hover{
+    background-color: #c4c4c4;
 }
 
 /* Modificacao de estilo do scrollbar */
@@ -115,7 +119,7 @@ html{
 
 #alerta h2{
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 700
 }
 
 #alerta p{
@@ -124,7 +128,7 @@ html{
 
 #alerta button{
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 700
 }
 
 /* Janela do alerta */
@@ -134,13 +138,13 @@ html{
     position: relative;
     padding: 0;
     outline: 0;
-    width: 400px;
+    width: 400px
 }
 
 /* Icones */
 .material-icons{
     position: relative;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 /* Botao X para apagar marcacoes */
@@ -159,5 +163,5 @@ html{
     float: right;
     left: 20px;
     bottom: 4px;
-    user-select: none;
+    user-select: none
 }
